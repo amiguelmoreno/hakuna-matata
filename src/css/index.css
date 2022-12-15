@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
 *,
 *::before,
 *::after {
@@ -14,9 +15,39 @@ html {
 }
 
 body {
-  background-color: rgb(24, 218, 157);
+  background-image: linear-gradient(to right bottom, #00ffbc, #00ffff, #95feff, #e2faff, #ffffff);
   height: 100vh;
   width: 100vw;
+}
+
+.header {
+  padding: 3rem 4rem;
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  width: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 50%;
+  background-color: white;
+}
+.header__logo img {
+  width: 100%;
+}
+.header__title {
+  color: rgb(130, 72, 35);
+  font-family: "Shadows Into Light Two", cursive;
+  padding-left: 5rem;
+}
+.header__title h1 {
+  font-size: 6.5rem;
+  line-height: 1.2;
+}
+.header__title h2 {
+  font-size: 2rem;
 }
 
 .whatsapp-btn {

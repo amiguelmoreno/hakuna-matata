@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
+
 *,
 *::before,
 *::after {
@@ -14,7 +16,14 @@ html {
 }
 
 body {
-    background-color: rgb(24, 218, 157);
+    background-image: linear-gradient(
+        to right bottom,
+        #00ffbc,
+        #00ffff,
+        #95feff,
+        #e2faff,
+        #ffffff
+    );
     height: 100vh;
     width: 100vw;
 }
