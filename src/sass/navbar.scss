@@ -1,0 +1,26 @@
+.navbar {
+    width: 100vw;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+
+    button {
+        padding: 1rem 2rem;
+        font-size: 1.8rem;
+        background-color: rgba(137, 86, 55, 0.943);
+        color: white;
+        border-radius: 100px;
+        border: none;
+        font-family: inherit;
+        letter-spacing: 2px;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: rgb(255, 252, 252);
+            color: rgba(137, 86, 55, 0.943);
+            transform: scale(1.1);
+        }
+    }
+}

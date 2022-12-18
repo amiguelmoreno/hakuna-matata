@@ -13,6 +13,7 @@ html {
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+    font-family: "Shadows Into Light Two", cursive;
 }
 
 body {
@@ -24,6 +25,15 @@ body {
         #e2faff,
         #ffffff
     );
-    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100vw;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

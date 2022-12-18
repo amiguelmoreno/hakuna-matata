@@ -4,7 +4,7 @@
     align-items: center;
 
     &__logo {
-        width: 12rem;
+        width: 15rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -19,8 +19,8 @@
 
     &__title {
         color: rgb(130, 72, 35);
-        font-family: "Shadows Into Light Two", cursive;
-        padding-left: 5rem;
+        font-family: inherit;
+        padding-left: 8rem;
         h1 {
             font-size: 6.5rem;
             line-height: 1.2;

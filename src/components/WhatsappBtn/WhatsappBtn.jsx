@@ -2,10 +2,10 @@ function WhatsappBtn() {
     return (
         <a
             className="whatsapp-btn"
-            href="https://api.whatsapp.com/send?phone=34665593628"
+            href="https://api.whatsapp.com/send?phone="
             target="_blank"
         >
-            <i class="fa fa-whatsapp"></i>
+            <i className="fa fa-whatsapp"></i>
         </a>
     );
 }
