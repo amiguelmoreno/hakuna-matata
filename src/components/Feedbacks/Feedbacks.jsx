@@ -45,7 +45,7 @@ const feedbacks = [
 ];
 
 function Feedbacks() {
-    const [current, setCurrent] = useState(0);
+    let [current, setCurrent] = useState(0);
     const lenght = feedbacks.length;
 
     const nextSlide = () => {
