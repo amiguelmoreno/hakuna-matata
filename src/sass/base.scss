@@ -6,17 +6,17 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-    scroll-behavior: smooth;
+    //scroll-behavior: smooth;
 }
 
 html {
-    scroll-behavior: smooth;
+    //scroll-behavior: smooth;
     box-sizing: border-box;
     font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
     font-family: "Shadows Into Light Two", cursive;
 }
 
-body {
+.App {
     background-image: linear-gradient(
         to right bottom,
         #00ffbc,
@@ -28,7 +28,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    width: 100vw;
+    padding-bottom: 15rem;
 }
 
 .App {

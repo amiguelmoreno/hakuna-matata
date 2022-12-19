@@ -1,8 +1,7 @@
 import Header from "./components/Header/Header";
 import Nav from "./components/Nav/Nav";
-//import Feedbacks from "./components/Feedbacks/Feedbacks";
+import Feedbacks from "./components/Feedbacks/Feedbacks";
 import Services from "./components/Services/Services";
-// import SliderTestimonials from "./components/SliderTestimonials/SliderTestimonials";
 import WhatsappBtn from "./components/WhatsappBtn/WhatsappBtn";
 
 function App() {
@@ -11,7 +10,7 @@ function App() {
             <Header></Header>
             <Nav></Nav>
             <Services></Services>
-            {/* <Feedbacks></Feedbacks> */}
+            <Feedbacks></Feedbacks>
             <WhatsappBtn></WhatsappBtn>
         </div>
     );

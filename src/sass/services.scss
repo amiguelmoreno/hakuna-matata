@@ -11,12 +11,11 @@
 }
 
 .services {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     flex-wrap: wrap;
     padding: 6rem;
     gap: 4rem;
-    justify-items: center;
+    justify-content: center;
 }
 
 .service {
