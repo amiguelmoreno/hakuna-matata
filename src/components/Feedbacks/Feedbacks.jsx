@@ -56,14 +56,12 @@ function Feedbacks() {
         setCurrent(current === 0 ? lenght - 1 : current - 1);
     };
 
-    console.log(current);
-
     if (!Array.isArray(feedbacks) || lenght <= 0) {
         return null;
     }
 
     return (
-        <div className="feedbacks-section">
+        <div id="feedbacks" className="feedbacks-section">
             <h2>Reseñas de nuestros clientes</h2>
             <div className="container">
                 <div onClick={prevSlide} className="arrow arrow--left">

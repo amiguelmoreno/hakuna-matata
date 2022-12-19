@@ -70,7 +70,7 @@ function Services() {
     let index = 0;
 
     return (
-        <div className="services__container">
+        <div id="services" className="services__container">
             <h2>Servicios</h2>
             <div className="services">
                 <Service content={services[index++]}></Service>

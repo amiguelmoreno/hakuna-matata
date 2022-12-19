@@ -1,0 +1,15 @@
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+
+    gap: 4rem;
+
+    iframe {
+        width: 60rem;
+        height: 40rem;
+        border: 4px solid rgba(147, 81, 40, 0.943);
+        border-radius: 10px;
+    }
+}
