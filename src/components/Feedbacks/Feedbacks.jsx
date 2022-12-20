@@ -1,5 +1,4 @@
 import { useState } from "react";
-import FeedbackSlider from "./FeedbackSlider";
 
 const feedbacks = [
     {
