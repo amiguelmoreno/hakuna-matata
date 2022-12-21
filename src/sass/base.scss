@@ -16,7 +16,7 @@ html {
     font-family: "Shadows Into Light Two", cursive;
 }
 
-.App {
+#root {
     background-image: linear-gradient(
         to right bottom,
         #00ffbc,
@@ -28,6 +28,20 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.App {
+    /* background-image: linear-gradient(
+        to right bottom,
+        #00ffbc,
+        #00ffff,
+        #95feff,
+        #e2faff,
+        #ffffff
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
     padding-bottom: 15rem;
 }
 

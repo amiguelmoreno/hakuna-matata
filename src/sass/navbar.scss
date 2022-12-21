@@ -1,11 +1,12 @@
 .navbar {
-    margin-top: 3rem;
+    margin: 2rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4rem;
 
-    a {
+    a,
+    button {
         padding: 1rem 2rem;
         font-size: 1.8rem;
         background-color: rgba(137, 86, 55, 0.943);
