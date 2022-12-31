@@ -34,7 +34,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; */
-  padding-bottom: 15rem;
+  padding-bottom: 7rem;
 }
 
 .App {
@@ -293,25 +293,15 @@ h2 {
 .product h4 .eur {
   font-size: 2.5rem;
 }
-.product form {
+.product__link {
   display: flex;
   align-items: end;
   gap: 3rem;
   height: 100%;
   font-size: 2rem;
 }
-.product form .quantity {
-  display: flex;
-  align-items: center;
-}
-.product form label {
-  font-size: 2rem;
-  padding-right: 1rem;
-}
-.product form input {
+.product__link button {
   font-family: inherit;
-}
-.product form input[type=submit] {
   border-radius: 10px;
   border: none;
   color: white;
@@ -321,19 +311,10 @@ h2 {
   background-color: rgba(113, 63, 32, 0.943);
   transition: all 0.3s;
 }
-.product form input[type=submit]:hover {
+.product__link button:hover {
   background-color: white;
   color: rgba(113, 63, 32, 0.943);
   border: 2px solid rgba(113, 63, 32, 0.943);
-}
-.product form input[type=number] {
-  width: 5rem;
-  font-size: 2rem;
-  background-color: rgb(255, 255, 255);
-  border: 2px solid rgba(81, 45, 23, 0.943);
-  color: rgba(81, 45, 23, 0.943);
-  border-radius: 3px;
-  text-align: center;
 }
 
 .map {
@@ -374,6 +355,15 @@ h2 {
   color: #25d366;
   background-color: #fff;
   font-size: 4rem;
+}
+
+.footer {
+  color: rgb(130, 72, 35);
+  padding-top: 7rem;
+  font-size: 2rem;
+}
+.footer b {
+  font-size: 2.5rem;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -5,6 +5,7 @@ import Products from "./components/Products/Products";
 import Feedbacks from "./components/Feedbacks/Feedbacks";
 import Map from "./components/Map/Map";
 import WhatsappBtn from "./components/WhatsappBtn/WhatsappBtn";
+import Footer from "./components/Footer/Footer";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
             <Products></Products>
             <Feedbacks></Feedbacks>
             <Map></Map>
+            <Footer></Footer>
             <WhatsappBtn></WhatsappBtn>
         </div>
     );

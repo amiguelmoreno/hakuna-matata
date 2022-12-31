@@ -10,24 +10,28 @@ const products = [
         description:
             "Valla para perros para restringir su acceso a determinadas áreas de la casa.",
         image: vallaInteriorPerro,
+        price: "29,95",
     },
     {
         title: "Cocodrilo de peluche",
         description:
             "Nuestro juguete de peluche para perros tiene una linda forma de cocodrilo limón, lo que agrega entretenimiento diario para sus mascotas.",
         image: peluchePerro,
+        price: "13,95",
     },
     {
         title: "Comida para perros (Ultima)",
         description:
             "Con sabor a pollo y arroz, diseñada para que cada comida aporte la cantidad necesaria de nutrientes para tu perro",
         image: comidaPerro,
+        price: "27,95",
     },
     {
         title: "Cama para perros medianos y grandes",
         description:
             "Desparasitar a tu mascota puede ser todo un contratiempo, por eso te ofrecemos la posibilidad de deshacerte de ellos",
         image: camaPerro,
+        price: "24,95",
     },
 ];
 
