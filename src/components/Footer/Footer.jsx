@@ -3,7 +3,7 @@ function Footer() {
 
     return (
         <p className="footer">
-            &#169;Copyright {date.getFullYear()} <b>BusinessLifters</b>
+            &#169;Copyright {date.getFullYear()} <b>Hakuna Matata</b>
         </p>
     );
 }
