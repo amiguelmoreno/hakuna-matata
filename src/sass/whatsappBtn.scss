@@ -6,21 +6,26 @@
     text-decoration: none;
     width: 6rem;
     height: 6rem;
-    bottom: 4rem;
-    right: 4rem;
+    bottom: 3.5rem;
+    right: 3.5rem;
     background-color: #25d366;
-    color: #fff;
-    border-radius: 5rem;
-    text-align: center;
-    font-size: 3.8rem;
-    box-shadow: 0.2rem 0.2rem 0.8rem #999;
-    z-index: 100;
-    transition: all 0.3s;
+    color: $white;
+    border-radius: 50%;
+    z-index: 200;
+    // Continuous pulse-glow to draw attention
+    animation: pulse-glow 2.8s ease-in-out infinite;
+    transition: transform 0.3s ease, background-color 0.25s ease;
+
+    svg {
+        width: 3rem;
+        height: 3rem;
+    }
 
     &:hover {
-        text-decoration: none;
+        background-color: $white;
         color: #25d366;
-        background-color: #fff;
-        font-size: 4rem;
+        transform: scale(1.15);
+        animation: none;
+        box-shadow: 0 6px 28px rgba(37, 211, 102, 0.55), 0 0 0 3px #25d366;
     }
 }

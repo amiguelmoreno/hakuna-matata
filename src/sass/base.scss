@@ -1,58 +1,156 @@
-@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
+// ─── Brand Colors (from logo) ─────────────────────────────────────────────────
+$teal-700:   #009994;
+$teal-500:   #00CEC8;   // logo turquoise
+$teal-400:   #1ADDD7;
+$teal-100:   #C8F5F3;
+$teal-50:    #E8FAFA;
 
+$brown-900:  #3d1c08;
+$brown-700:  #6b3a1f;
+$brown-500:  #8b4513;
+$brown-400:  #a0522d;
+$brown-200:  #d4a574;
+$brown-100:  #f0ddd0;
+$brown-50:   #fdf6ec;   // logo inner cream
+
+$white:      #ffffff;
+$star-gold:  #f5a623;
+
+// ─── Shadows ──────────────────────────────────────────────────────────────────
+$shadow-sm:    0 2px 8px rgba(0, 0, 0, 0.07);
+$shadow-md:    0 6px 24px rgba(0, 0, 0, 0.1);
+$shadow-lg:    0 12px 48px rgba(0, 0, 0, 0.13);
+$shadow-teal:  0 6px 24px rgba(0, 206, 200, 0.25);
+$shadow-brown: 0 6px 24px rgba(139, 69, 19, 0.18);
+
+// ─── Keyframe animations ───────────────────────────────────────────────────────
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(32px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-24px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(24px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.88); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50%       { transform: translateY(-14px); }
+}
+
+@keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4); }
+    50%       { box-shadow: 0 4px 32px rgba(37, 211, 102, 0.7),
+                            0 0 0 8px rgba(37, 211, 102, 0.12); }
+}
+
+@keyframes shimmer {
+    0%   { background-position: -200% center; }
+    100% { background-position: 200% center; }
+}
+
+// ─── Scroll-reveal utility classes ────────────────────────────────────────────
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+
+    &.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-28px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+
+    &.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(28px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+
+    &.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.reveal-scale {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+
+    &.visible {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+// ─── Reset ────────────────────────────────────────────────────────────────────
 *,
 *::before,
 *::after {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
-    scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 html {
     scroll-behavior: smooth;
-    box-sizing: border-box;
-    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
-    font-family: "Shadows Into Light Two", cursive;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Nunito", "Segoe UI", sans-serif;
+    color: $brown-900;
+    line-height: 1.6;
+    // Turquesa del logo protagonista, crema como acento cálido
+    background: linear-gradient(
+        155deg,
+        #8adedd 0%,
+        #aae8e6 18%,
+        #d2f4f3 36%,
+        #fdf6ec 54%,
+        #c4efee 72%,
+        #8adedd 100%
+    );
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 #root {
-    background-image: linear-gradient(
-        to right bottom,
-        #00ffbc,
-        #00ffff,
-        #95feff,
-        #e2faff,
-        #ffffff
-    );
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.App {
-    /* background-image: linear-gradient(
-        to right bottom,
-        #00ffbc,
-        #00ffff,
-        #95feff,
-        #e2faff,
-        #ffffff
-    );
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
-    padding-bottom: 7rem;
+    min-height: 100vh;
 }
 
 .App {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    width: 100%;
 }
 
 h2 {
-    font-size: 5rem;
-    color: rgb(130, 72, 35);
+    font-family: "Shadows Into Light Two", cursive;
+    font-size: 4.8rem;
+    color: $brown-500;
+    text-align: center;
 }

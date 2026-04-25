@@ -1,15 +1,85 @@
 .map {
+    width: 100%;
+    max-width: 1280px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 6rem;
+    margin-top: 8rem;
+    padding: 0 3rem;
 
-    gap: 4rem;
+    h2 {
+        position: relative;
+        margin-bottom: 0.6rem;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 5rem;
+            height: 3px;
+            background: linear-gradient(to right, $teal-700, $teal-400);
+            margin: 1rem auto 0;
+            border-radius: 2px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 3rem;
+        width: 100%;
+        margin-top: 4rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        background-color: $white;
+        border-radius: 16px;
+        padding: 3.5rem;
+        box-shadow: $shadow-sm;
+        border-top: 4px solid $brown-400;
+        border-left: 1px solid rgba(160, 82, 45, 0.14);
+        border-right: 1px solid rgba(160, 82, 45, 0.14);
+        border-bottom: 1px solid rgba(160, 82, 45, 0.14);
+        min-width: 26rem;
+        flex: 1;
+        justify-content: center;
+
+        h3 {
+            font-family: "Shadows Into Light Two", cursive;
+            font-size: 3rem;
+            color: $brown-500;
+        }
+    }
+
+    &__info-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.4rem;
+        font-size: 1.6rem;
+        color: $brown-700;
+
+        svg {
+            width: 2.2rem;
+            height: 2.2rem;
+            fill: $teal-500;
+            flex-shrink: 0;
+            margin-top: 0.2rem;
+        }
+
+        span {
+            line-height: 1.6;
+        }
+    }
 
     iframe {
-        width: 60rem;
+        flex: 2;
+        min-width: 28rem;
         height: 40rem;
-        border: 4px solid rgba(147, 81, 40, 0.943);
-        border-radius: 10px;
+        border: none;
+        border-radius: 16px;
+        box-shadow: $shadow-md;
     }
 }

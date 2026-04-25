@@ -1,33 +1,93 @@
 .header {
-    padding: 3rem 4rem;
+    width: 100%;
+    padding: 7rem 4rem 6rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+    // Decorative blobs matching logo turquoise
+    &::before {
+        content: "";
+        position: absolute;
+        top: -8rem;
+        right: -8rem;
+        width: 42rem;
+        height: 42rem;
+        background: radial-gradient(circle, rgba(0, 206, 200, 0.18) 0%, transparent 65%);
+        pointer-events: none;
+        animation: float 7s ease-in-out infinite;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -6rem;
+        left: -6rem;
+        width: 36rem;
+        height: 36rem;
+        background: radial-gradient(circle, rgba(139, 69, 19, 0.09) 0%, transparent 65%);
+        pointer-events: none;
+        animation: float 9s ease-in-out infinite reverse;
+    }
 
     &__logo {
-        width: 15rem;
+        width: 18rem;
+        height: 18rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         border-radius: 50%;
-        background-color: white;
+        background-color: $white;
+        box-shadow:
+            0 0 0 5px $teal-500,
+            0 0 0 10px rgba(0, 206, 200, 0.2),
+            $shadow-lg;
+        z-index: 1;
+        // Floating animation
+        animation: float 4.5s ease-in-out infinite;
 
         img {
-            width: 100%;
+            width: 92%;
+            border-radius: 50%;
         }
     }
 
     &__title {
-        color: rgb(130, 72, 35);
-        font-family: inherit;
-        padding-left: 8rem;
+        z-index: 1;
+        animation: fadeInUp 0.9s ease both;
+        animation-delay: 0.2s;
+
         h1 {
-            font-size: 6.5rem;
-            line-height: 1.2;
+            font-family: "Shadows Into Light Two", cursive;
+            font-size: 7.5rem;
+            color: $brown-500;
+            line-height: 1;
+            letter-spacing: 4px;
         }
 
         h2 {
-            font-size: 2rem;
+            font-family: "Nunito", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: $teal-700;
+            letter-spacing: 7px;
+            text-transform: uppercase;
+            margin-top: 1.2rem;
         }
+    }
+
+    &__tagline {
+        z-index: 1;
+        font-size: 1.8rem;
+        color: $brown-400;
+        font-weight: 600;
+        animation: fadeInUp 0.9s ease both;
+        animation-delay: 0.45s;
     }
 }
