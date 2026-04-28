@@ -1,45 +1,69 @@
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 import Product from "./Product";
-import camaPerro from "../../assets/products/cama-perro.jpeg";
-import peluchePerro from "../../assets/products/cocodrilo-peluche-perro.jpg";
-import comidaPerro from "../../assets/products/comida-perro-ultima.jpeg";
-import vallaInteriorPerro from "../../assets/products/valla-interior-perro.jpg";
+import champuImg from "../../assets/products/champu-perro.jpg";
+import acondicionadorImg from "../../assets/products/acondicionador-perro.jpg";
+import coloniaImg from "../../assets/products/colonia-perro.jpg";
+import cepilloImg from "../../assets/products/cepillo-perro.jpg";
+import snacksImg from "../../assets/products/snacks-perro.jpg";
+import arnesImg from "../../assets/products/arnes-perro.jpg";
 
 const products = [
     {
-        title: "Valla para perros (interior)",
-        description: "Valla para perros para restringir su acceso a determinadas áreas de la casa.",
-        image: vallaInteriorPerro,
-        price: "29,95",
+        title: "Champú Profesional",
+        badge: "Higiene",
+        description: "El mismo champú que usamos en el salón. Fórmula suave con extractos naturales, ideal para pelajes de todo tipo.",
+        price: "12,95",
+        image: champuImg,
     },
     {
-        title: "Cocodrilo de peluche",
-        description: "Nuestro juguete de peluche tiene una linda forma de cocodrilo limón que entretiene a tu mascota cada día.",
-        image: peluchePerro,
-        price: "13,95",
+        title: "Acondicionador Hidratante",
+        badge: "Higiene",
+        description: "Devuelve el brillo y la suavidad al pelo. Especialmente recomendado para razas de pelo largo o rizado.",
+        price: "9,95",
+        image: acondicionadorImg,
     },
     {
-        title: "Comida para perros (Ultima)",
-        description: "Con sabor a pollo y arroz, diseñada para que cada comida aporte los nutrientes necesarios para tu perro.",
-        image: comidaPerro,
-        price: "27,95",
+        title: "Colonia Duradera",
+        badge: "Perfumería",
+        description: "Aroma fresco de larga duración pensado para perros. Sin alcohol ni irritantes, con dermatología testada.",
+        price: "8,95",
+        image: coloniaImg,
     },
     {
-        title: "Cama para perros medianos y grandes",
-        description: "Cama cómoda y resistente para que tu perro descanse como se merece.",
-        image: camaPerro,
+        title: "Cepillo Antipelos",
+        badge: "Accesorios",
+        description: "Doble cara para desenredar y dar brillo. Elimina el pelo muerto sin molestar a tu mascota.",
+        price: "14,95",
+        image: cepilloImg,
+    },
+    {
+        title: "Snacks Naturales",
+        badge: "Nutrición",
+        description: "Premios sin aditivos artificiales, perfectos para el entrenamiento diario. Irresistibles para ellos.",
+        price: "7,95",
+        image: snacksImg,
+    },
+    {
+        title: "Arnés Ergonómico",
+        badge: "Paseos",
+        description: "Ajuste preciso con acolchado suave. Distribuye la presión de forma segura para paseos cómodos.",
         price: "24,95",
+        image: arnesImg,
     },
 ];
 
-const STAGGER = 100;
+const STAGGER = 80;
 
 function Products() {
     const titleRef = useScrollReveal(0.3);
+    const subtitleRef = useScrollReveal(0.3);
 
     return (
         <section id="products" className="products__container">
             <h2 ref={titleRef} className="reveal">Nuestros Productos</h2>
+            <p ref={subtitleRef} className="products__subtitle reveal">
+                Todo lo que tu perro necesita, en un solo lugar
+            </p>
             <div className="products">
                 {products.map((product, index) => (
                     <Product key={index} content={product} delay={index * STAGGER} />
