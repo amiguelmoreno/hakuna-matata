@@ -28,4 +28,16 @@
         animation: none;
         box-shadow: 0 6px 28px rgba(37, 211, 102, 0.55), 0 0 0 3px #25d366;
     }
+
+    @media (max-width: 600px) {
+        bottom: calc(7.5rem + env(safe-area-inset-bottom, 0px));
+        right: 2rem;
+        width: 5.2rem;
+        height: 5.2rem;
+
+        svg {
+            width: 2.6rem;
+            height: 2.6rem;
+        }
+    }
 }

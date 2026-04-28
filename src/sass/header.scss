@@ -90,4 +90,56 @@
         animation: fadeInUp 0.9s ease both;
         animation-delay: 0.45s;
     }
+
+    @media (max-width: 768px) {
+        padding: 5rem 2.4rem 4rem;
+        gap: 1.8rem;
+
+        &__logo {
+            width: 14rem;
+            height: 14rem;
+        }
+
+        &__title {
+            h1 {
+                font-size: 5.5rem;
+                letter-spacing: 2px;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+                letter-spacing: 4px;
+                margin-top: 0.8rem;
+            }
+        }
+
+        &__tagline {
+            font-size: 1.55rem;
+        }
+    }
+
+    @media (max-width: 400px) {
+        padding: 4rem 1.6rem 3rem;
+
+        &__logo {
+            width: 11rem;
+            height: 11rem;
+        }
+
+        &__title {
+            h1 {
+                font-size: 4.2rem;
+                letter-spacing: 1px;
+            }
+
+            h2 {
+                font-size: 1.1rem;
+                letter-spacing: 3px;
+            }
+        }
+
+        &__tagline {
+            font-size: 1.4rem;
+        }
+    }
 }
