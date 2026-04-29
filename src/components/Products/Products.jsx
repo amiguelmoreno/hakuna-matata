@@ -1,11 +1,11 @@
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 import Product from "./Product";
-import champuImg from "../../assets/products/champu-perro.jpg";
-import acondicionadorImg from "../../assets/products/acondicionador-perro.jpg";
-import coloniaImg from "../../assets/products/colonia-perro.jpg";
-import cepilloImg from "../../assets/products/cepillo-perro.jpg";
-import snacksImg from "../../assets/products/snacks-perro.jpg";
-import arnesImg from "../../assets/products/arnes-perro.jpg";
+import champuImg from "../../assets/products/champu-perro.webp";
+import acondicionadorImg from "../../assets/products/acondicionador-perro.webp";
+import coloniaImg from "../../assets/products/colonia-perro.webp";
+import cepilloImg from "../../assets/products/cepillo-perro.webp";
+import snacksImg from "../../assets/products/snacks-perro.webp";
+import arnesImg from "../../assets/products/arnes-perro.webp";
 
 const products = [
     {

@@ -15,7 +15,10 @@ function Product({ content, delay = 0 }) {
                     className="product__photo"
                     src={content.image}
                     alt={content.title}
+                    width="600"
+                    height="420"
                     loading="lazy"
+                    decoding="async"
                 />
                 <div className="product__overlay" />
                 <span className="product__badge">{content.badge}</span>

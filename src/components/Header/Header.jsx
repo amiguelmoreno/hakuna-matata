@@ -1,10 +1,15 @@
-import hakunaLogo from "../../assets/hakuna-matata-logo.png";
-
 function Header() {
     return (
         <header className="header">
             <div className="header__logo">
-                <img src={hakunaLogo} alt="Hakuna Matata logo" />
+                <img
+                    src="/hakuna-matata-logo.webp"
+                    alt="Hakuna Matata logo"
+                    width="400"
+                    height="400"
+                    fetchpriority="high"
+                    decoding="sync"
+                />
             </div>
             <div className="header__title">
                 <h1>HAKUNA MATATA</h1>

@@ -1,14 +1,14 @@
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 import Service from "./Service";
-import autolavadoPerro from "../../assets/servicesIcons/autolavado-perro.png";
-import corteDePeloPerro from "../../assets/servicesIcons/corte-de-pelo-perro.png";
-import corteUñasPerro from "../../assets/servicesIcons/corte-uñas-perro.png";
-import bañoPerro from "../../assets/servicesIcons/baño-perros.png";
-import limpiezaAnalPerro from "../../assets/servicesIcons/limpieza-anal-perro.png";
-import limpiezaOidosPerro from "../../assets/servicesIcons/limpieza-de-oidos-perro.png";
-import limpiezaDientesPerro from "../../assets/servicesIcons/limpieza-dientes-perro.png";
-import packCompletoHigiene from "../../assets/servicesIcons/pack-completo-higiene.png";
-import tratamientoAntiparasitario from "../../assets/servicesIcons/tratamiento-antiparasitario.png";
+import autolavadoPerro from "../../assets/servicesIcons/autolavado-perro.webp";
+import corteDePeloPerro from "../../assets/servicesIcons/corte-de-pelo-perro.webp";
+import corteUñasPerro from "../../assets/servicesIcons/corte-uñas-perro.webp";
+import bañoPerro from "../../assets/servicesIcons/baño-perros.webp";
+import limpiezaAnalPerro from "../../assets/servicesIcons/limpieza-anal-perro.webp";
+import limpiezaOidosPerro from "../../assets/servicesIcons/limpieza-de-oidos-perro.webp";
+import limpiezaDientesPerro from "../../assets/servicesIcons/limpieza-dientes-perro.webp";
+import packCompletoHigiene from "../../assets/servicesIcons/pack-completo-higiene.webp";
+import tratamientoAntiparasitario from "../../assets/servicesIcons/tratamiento-antiparasitario.webp";
 
 const services = [
     {
@@ -62,10 +62,12 @@ const STAGGER = 80;
 
 function Services() {
     const titleRef = useScrollReveal(0.3);
+    const subtitleRef = useScrollReveal(0.3);
 
     return (
         <section id="services" className="services__container">
             <h2 ref={titleRef} className="reveal">Nuestros Servicios</h2>
+            <p ref={subtitleRef} className="services__subtitle reveal">Profesionales del bienestar canino</p>
             <div className="services">
                 {services.map((service, index) => (
                     <Service key={index} content={service} delay={index * STAGGER} />

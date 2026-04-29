@@ -13,6 +13,8 @@
         "watch:sass": "sass ./src/sass/main.scss ./src/css/index.css -w"
     },
     "dependencies": {
+        "@fontsource/nunito": "^5.2.7",
+        "@fontsource/shadows-into-light-two": "^5.2.7",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
     },

@@ -49,12 +49,14 @@
             0 0 0 10px rgba(0, 206, 200, 0.2),
             $shadow-lg;
         z-index: 1;
-        // Floating animation
+        will-change: transform;
         animation: float 4.5s ease-in-out infinite;
 
         img {
             width: 92%;
+            height: 92%;
             border-radius: 50%;
+            object-fit: contain;
         }
     }
 
