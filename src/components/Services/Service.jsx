@@ -10,7 +10,7 @@ function Service({ content, delay = 0 }) {
             style={{ transitionDelay: `${delay}ms` }}
         >
             <div className="service__img">
-                <img src={content.image} alt={content.title} width="160" height="160" loading="lazy" />
+                <img src={content.image} alt={content.title} width="90" height="90" loading="lazy" decoding="async" />
             </div>
             <h3>{content.title}</h3>
             <p>{content.description}</p>

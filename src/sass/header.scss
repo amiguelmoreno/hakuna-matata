@@ -62,8 +62,8 @@
 
     &__title {
         z-index: 1;
-        animation: fadeInUp 0.9s ease both;
-        animation-delay: 0.2s;
+        animation: fadeInUp 0.9s ease forwards;
+        animation-delay: 0s;
 
         h1 {
             font-family: "Shadows Into Light Two", cursive;

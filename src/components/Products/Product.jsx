@@ -15,8 +15,8 @@ function Product({ content, delay = 0 }) {
                     className="product__photo"
                     src={content.image}
                     alt={content.title}
-                    width="600"
-                    height="420"
+                    width="400"
+                    height="280"
                     loading="lazy"
                     decoding="async"
                 />
